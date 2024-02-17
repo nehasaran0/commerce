@@ -1,0 +1,5 @@
+<apex:page controller="Student" >
+    Name: {!Name}<br/>
+    Branch: {!Branch}<br/>
+    phone: {!phone}
+</apex:page>

@@ -1,0 +1,9 @@
+<apex:page controller="wizard1ctrl">
+    <apex:pageBlock >
+        <apex:pageBlockSection title="Record Saved">
+            <h1 style="Color: Green ;background: Yellow;">
+                Your Record has been Successfully Created
+            </h1>
+        </apex:pageBlockSection>
+    </apex:pageBlock>
+</apex:page>

@@ -1,0 +1,16 @@
+<apex:page controller="wizard1ctrl">
+    <apex:form >
+     <apex:pageBlock >
+            <apex:pageBlockSection title="Opportunity Edit Page">
+                <apex:inputField value="{!objOpp.Name}"/>
+                <apex:inputField value="{!objOpp.StageName}"/>
+                <apex:inputField value="{!objOpp.Amount}"/>
+                <apex:inputField value="{!objOpp.CloseDate}"/>
+            </apex:pageBlockSection>
+            <apex:pageBlockButtons >
+                <apex:commandButton value="Next Page" action="{!gotoPage9}"/>
+                 <apex:commandButton value="Previous Page" action="{!gotoPage7}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,22 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock title="Employee">
+            <apex:pageBlockSection title="Personal Information">
+                Personal Informations<br/>
+                Name: Neha<br/>
+                Age: 22
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="Employee Information">
+                Name: Neha<br/>
+                State: Rajasthan<br/>
+                Company: Capgemini<br/>
+            </apex:pageBlockSection>
+            <apex:pageBlockSection title="other Information" collapsible="false">
+               Other information
+            </apex:pageBlockSection>
+            <apex:facet name="footer">
+             <apex:commandButton value="Submit" style="background:blue;color:white;" /> 
+        </apex:facet>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

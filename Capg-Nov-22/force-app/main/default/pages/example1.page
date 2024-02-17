@@ -1,0 +1,14 @@
+<apex:page >
+    <apex:form >
+        <apex:pageBlock title="personal Informations">
+        Name:Neha<br/>
+        Age: 22<br/>
+        College: XYZ<br/>
+        State: Rajasthan;
+        <apex:facet name="footer">
+             <apex:commandButton value="Submit" style="background:blue;color:white;" /> 
+        </apex:facet>
+        </apex:pageBlock>
+            
+    </apex:form>
+</apex:page>

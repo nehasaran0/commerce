@@ -1,0 +1,33 @@
+<apex:page controller="wizard1ctrl">
+    <apex:form >
+        <apex:pageBlock >
+            <apex:pageBlockSection title="Account Edit Page">
+                <apex:outputField value="{!objAcc.Name}"/>
+                <apex:outputField value="{!objAcc.Type}"/>
+                <apex:outputField value="{!objAcc.Industry}"/>
+                <apex:outputField value="{!objAcc.Phone}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Contact Edit Page">
+                <apex:outputField value="{!objCon.FirstName}"/>
+                <apex:outputField value="{!objCon.LastName}"/>
+                <apex:outputField value="{!objCon.Email}"/>
+                <apex:outputField value="{!objCon.Phone}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockSection title="Opportunity Edit Page">
+                <apex:outputField value="{!objOpp.Name}"/>
+                <apex:outputField value="{!objOpp.StageName}"/>
+                <apex:outputField value="{!objOpp.Amount}"/>
+                <apex:outputField value="{!objOpp.CloseDate}"/>
+            </apex:pageBlockSection>
+            
+            <apex:pageBlockButtons >
+               <apex:commandButton value="Edit Account" action="{!gotoPage6}"/>
+                 <apex:commandButton value="Edit Contact" action="{!gotoPage7}"/>
+                 <apex:commandButton value="Edit Opportunity" action="{!gotoPage8}"/>
+                 <apex:commandButton value="Save All" action="{!save_now}"/>
+            </apex:pageBlockButtons>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>
